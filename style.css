@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Outfit:wght@700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Hanken Grotesk';
+}
+
+#container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    width: 55%;
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 12px 19px 43px -33px rgba(0,0,0,0.86);
+}
+
+#left{
+    height: 100%;
+    width: 50%;
+    text-align: center;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+}
+
+#Result-head{
+    color:hsl(241, 100%, 89%);
+    font-size: 24px;
+    font-weight: 700;
+}
+
+#result{
+    height: 35%;
+    width: 52%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
+}
+
+.big{
+    font-size: 5em;
+    font-weight: 700;
+    color: #fff;
+}
+.small{
+    font-size:1em;
+    color:hsl(241, 100%, 89%);
+    font-weight: 600;
+}
+
+#phrase{
+    font-size: 2.5em;
+    height: 20px;
+    color: #fff;
+}
+
+#score{
+    word-spacing: 2px;
+    font-size: 18px;
+    color:hsl(241, 100%, 89%);
+}
+
+#right{
+    position: relative;
+    height: 100%;
+    width:50%;
+    background-color: #fff;
+    display: grid;
+    grid-template-rows:2.5fr 5fr 3fr;
+    border-radius: 30px;
+    align-items: center;
+}
+
+h4{
+    font-size: 24px;
+    height: 10%;
+    margin-left: 40px;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+li{
+    height: 50px;
+    border:none;
+    margin: 0 0 15px 0 ;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.Reaction{
+    font-size: 18px;
+    color:hsl(0, 100%, 67%) ;
+    background-color: hsla(0, 100%, 67%, 0.082);
+}
+
+.Memory{
+    font-size: 18px;
+    color:hsl(39, 100%, 56%);
+    background-color: hsla(39, 100%, 56%, 0.082);
+}
+
+.Verbal{
+    font-size: 18px;
+    color: hsl(166, 100%, 37%);
+    background-color: hsla(166, 100%, 37%, 0.082);
+}
+
+.Visual{
+    font-size: 18px;
+    color: hsl(234, 85%, 45%);
+    background-color: hsla(234, 85%, 45%, 0.082);
+}
+
+svg{
+    margin-right:10px;
+}
+
+.dark{
+    color: #000;
+    font-weight: 700;
+}
+
+.light{
+    font-weight: 900;
+    color:hsl(0, 0%, 57%);
+}
+
+.marks{
+    margin-left: auto;
+}
+
+#continue{
+    cursor: pointer;
+    width: 81%;
+    height: 10vh;
+    position: absolute;
+    left: 2rem;
+    bottom: 3rem;
+    border-radius: 40px;
+    border: none;
+    color: #fff;
+    font-size: 19px;
+    font-weight: 900;
+    background-color:hsl(224, 30%, 27%);
+}
+
+#continue:hover{
+    background: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+}
+
+@media (max-width: 376px) {
+   #container{
+    width: 90%;
+   }
+
+    #left,#right {
+      width: 100%;
+    }
+}
